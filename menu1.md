@@ -1,3 +1,7 @@
+@def english = true
+@def korean = false
+@def german = false
+
 +++
 title = "Code blocks"
 hascode = true

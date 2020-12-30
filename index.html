@@ -3,28 +3,17 @@
    <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     
-     
+     {{if hasmath}} {{insert head_katex.html }}     {{end}}
+     {{if hascode}} {{insert head_highlight.html }}   {{end}}
      <link rel="stylesheet" href="/css/franklin.css">
      <link rel="stylesheet" href="/css/basic.css">
      <link rel="icon" href="/assets/favicon.png">
-      <title>omnisense</title>  
+     {{isdef title}} <title>omnisense</title>  {{end}}
    </head>
 
    <body>
       <div>
-         <header>
-  <div><a href="/">omnisense</a></div>
-</header>
-
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/menu1/">Productions</a></li>
-    <li><a href="/menu2/">Reproductions</a></li>
-    <li><a href="/menu3/">Journal</a></li>
-  </ul>
-</nav>
+         {{insert header.html}}
 
          <article>
             <h3>Hello, Here is Omnisense.</h3>
@@ -49,7 +38,11 @@ by compining of this, I dream the omniscience and ompipotence.</pre>
          </article>
       </div>
 
-      
-      
+      {{ if hasmath }}
+         {{ insert foot_katex.html }}
+      {{ end }}
+      {{ if hascode }}
+         {{ insert foot_highlight.html }}
+      {{ end }}
    </body>
 </html>

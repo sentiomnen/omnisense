@@ -4,6 +4,10 @@
 @def rss_title = "More goodies"
 @def rss_pubdate = Date(2019, 5, 1)
 
+@def english = true
+@def korean = false
+@def german = false
+
 @def tags = ["syntax", "code", "image"]
 
 # More goodies

@@ -1,5 +1,9 @@
 @def title = "Menu 3"
 
+@def english = true
+@def korean = false
+@def german = false
+
 # Working with tags
 
 **Example**:

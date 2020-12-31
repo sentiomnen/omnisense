@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'IBM Plex Sans KR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* ==================================================================
     VARIABLES
 ================================================================== */
@@ -6,7 +14,7 @@
   --block-background: #333333;
   --small: 14px;
   --normal: 19px;
-  --text-color: hsv(0, 0%, 20%);
+  --text-color: #f0f0f0;
 }
 
 /* ==================================================================
@@ -14,7 +22,7 @@
 ================================================================== */
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Sans KR';
   font-size: var(--normal);
   color: var(--text-color);
 }
@@ -76,6 +84,7 @@ html {
 .franklin-toc li {
   /* Avoid clickable elements being too close together. */
   margin: 0.6rem 0;
+  color: #deb564
 }
 
 .franklin-content {
@@ -102,34 +111,36 @@ html {
   }
 }
 
+article p > a {
+  color: #deb564;
+  font-size: 1.2em;
+}
+
 /* ==================================================================
     TITLES
 ================================================================== */
 
 .franklin-content h1 { font-size: 24px; text-align: center; }
 .franklin-content h2 { font-size: 22px; }
-.franklin-content h3 { font-size: 20px; }
+.franklin-content h3 {
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin-bottom: -0.5em;
+  padding: 0%;
+}
 
-.franklin-content h2,
-h3,
-h4,
-h5,
-h6 {
+.franklin-content h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
 .franklin-content h1 {
-  padding-bottom: 0.5em;
-  border-bottom: 3px double lightgrey;
   margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 .franklin-content h2 {
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid lightgrey;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
 }
 
 .franklin-content h1 a { color: inherit; }
@@ -177,7 +188,8 @@ td {
 
 /* Spacing between bullet points. */
 .franklin-content li p {
-  margin: 10px 0;
+  padding: 0%;
+  margin: 0%;
 }
 
 .franklin-content a {

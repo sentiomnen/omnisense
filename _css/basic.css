@@ -13,9 +13,12 @@ body {
 }
 
 .banner {
-  width: auto;
-  height: 60%;
   float: right;
+
+  width: auto;
+  height: auto;
+  max-width: auto;
+  max-height: 15em;
 }
 
 
@@ -96,5 +99,11 @@ footer {
   padding: 1rem 0rem;
 }
 
-footer a { color: #f0f0f0; text-decoration: none; }
-footer a:hover { color: #E2921C; text-decoration: none; }
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #E2921C;
+  text-decoration: none;
+}

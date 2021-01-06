@@ -1,6 +1,3 @@
-@def korean = false
-@def english = true
-@def german = false
 @def title = "Linear Algebra"
 
 # {{fill title}}

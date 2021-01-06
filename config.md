@@ -32,3 +32,16 @@ For instance:
    !#3
    @@
 }
+
+<!--------------------Text--------------------->
+\newcommand{\middle}[1]{@@middle !#1 @@}
+\newcommand{\right}[1]{ @@right !#1 @@ }
+
+\newcommand{\serif}[1]{ @@serif !#1 @@ }
+
+<!--------------------Layout--------------------->
+\newcommand{\button}[2]{
+   ~~~<div class="button"><a href="!#1">~~~
+   !#2
+   ~~~</div></a>~~~
+}

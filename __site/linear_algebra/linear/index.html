@@ -1,0 +1,73 @@
+<!doctype html>
+<meta lang=" en ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="icon" href="/assets/favicon.png">
+   <title>Linear Algebra</title>  
+</head>
+<body>
+  <div>
+    <header>
+  <div><a href="/">omnisense</a></div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/linear_algebra/linear/">Algebra</a></li>
+    <li><a href="/menu2/">Mechanics</a></li>
+    <li><a href="/menu3/">Programming</a></li>
+  </ul>
+</nav>
+
+    <article>
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="fill_title"><a href="#fill_title">Linear Algebra</a></h1>
+<p>Solving the system of linear equations &#40; Sets of linear equations &#41; is the central problem of Linear algebra.<br/></p>
+<p><strong>In Field F, System of m linear equations in n unknowns are :</strong><br/> \(x_i\) that \(1 \le i \le n\) is unknowns and \( A_{ij},\ b_i\) that \(\ 1 \le i \le m, 1 \le j \le n, i \vee j \in R\) is constant.</p>
+\[ \begin{cases}\ A_{11} x_1 + A_{12} x_2 + \cdots + A_{1n} x_n\ \ \ = & b_1.\\
+\ A_{21} x_1 + A_{22} x_2 + \cdots + A_{2n} x_n\ \ \ = & b_2.\\
+\quad \vdots & \vdots \\
+\ A_{m1} x_1 + A_{m2} x_2 + \cdots + A_{mn} x_n = & b_m.\ \end{cases} \]
+<p>With follows \(x_1 = s_1,\ x_2 = s_2, \cdots, x_n = s_n\), the tuple \((s_1, s_2, \cdots, s_n)\) called <strong>solution</strong>.<br/> If \(b_1 = b_2 = \cdots = b_m\), called this system to <strong>homogeneous</strong>. and this system has at least one solution that called <strong>trivial solution</strong>.<br/> Systems can sorted with solution set if :</p>
+<ul>
+<li><p>the solution set is a empty set, the system sorted in <em>inconsistent</em>.</p>
+</li>
+<li><p>the solution set is not a empty set, the system sorted in <em>consistent</em>.</p>
+</li>
+</ul>
+<h2 id="a_hreflinear_algebraeleminationelemination"><a href="#a_hreflinear_algebraeleminationelemination"><a href="/linear_algebra/elemination/">Elemination.</a></a></h2>
+<p>Think about how solve the system of linear equations given below that not difficulut.</p>
+\[ \begin{cases} 1x + 2y = 3 \\ 4x + 5y = 6. \end{cases} \]
+<p>You may get the solution follow process given below :<br/> Subtract 4 times the first equation from the second equation.</p>
+\[ (4x + 5y) - 4(1x + 2y) = -6,\ given\ -3y = -6. \]
+<p>This <em>eliminates</em> x from the second equation. and it leaves one equation for y. and Immediately we know y &#61; 2.<br/> Then x comes from the first equation 1x &#43; 2y &#61; 3 :<br/> <strong>Back-substitution</strong> : \(1x + 2(2) = 3\ given\ x = -1\).</p>
+<p>This process looks like easy and natural, but When we apply this process and How it works strictly?<br/> <a href="/linear_algebra/elemination/">Elemination</a> is the answer of this questions and others.</p>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; sentiomnen. built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>, <a href="https://vercel.com">Vercel</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+      </article>
+    </div>
+
+    <footer>
+      <p>Sentiomnen, loha_dan@protonmail.ch</p>
+
+      
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+      
+      
+    </footer>
+  </body>
+</html>

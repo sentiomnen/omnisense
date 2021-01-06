@@ -1,0 +1,72 @@
+<!doctype html>
+<meta lang=" en ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="icon" href="/assets/favicon.png">
+   <title>System of linear equations</title>  
+</head>
+<body>
+  <div>
+    <header>
+  <div><a href="/">omnisense</a></div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/linear_algebra/linear_ko/">Algebra</a></li>
+    <li><a href="/menu2/">Mechanics</a></li>
+    <li><a href="/menu3/">Programming</a></li>
+  </ul>
+</nav>
+
+    <article>
+<!-- Content appended here -->
+<div class="franklin-content"><div class="franklin-toc"><ol><li><a href="#system_of_linear_equations">System of linear equations</a><ol><li><a href="#elemination">Elemination.</a></li></ol></li></ol></div>
+<p>선형 대수학의 중심 주제는 <strong>연립 방정식의 해를 구하는 것</strong>이다.</p>
+<h2 id="system_of_linear_equations"><a href="#system_of_linear_equations">System of linear equations</a></h2>
+<p>In Field F, System of m linear equations in n unknowns is that <br/> problem find tuple &#40;x1, ..., x2&#41; above field F that satisfy every linear equations of system called &quot;solution&quot;. <br/></p>
+\[	\begin{cases}
+	\ A11 x1 + A12 x2 + ... + A1n xn = y1.\\
+	\ A21 x1 + A22 x2 + ... + A2n xn = y2.\\
+	\ \cdots \\
+	\ Am1 x1 + Am2 x2 + ... + Amn xn = ym.\\
+\end{cases} \]
+<p>If y1 &#61; y2 &#61; ym, The system is <strong>homogeneous</strong>. <br/> If two different system have same solution, Two systems are equivalent.</p>
+<h3 id="elemination"><a href="#elemination">Elemination.</a></h3>
+<p>아래에 주어진 연립 방정식의 해를 구하기 위해서는,</p>
+\[ \begin{cases}
+\ 1x + 2y = 3. \\
+\ 4x + 5y = 6. \\
+\end{cases}\\ \]
+<p>Subtract 4 times the first equation from the second equation.<br/> This eliminates x from the second equation. and it leaves one equation for y :</p>
+\[ (4x + 5y) - 4(1x + 2y) = -6,\ given\  -3y = -6. \]
+<p>Immediately we know y &#61; 2. Then x comes from the first equation 1x &#43; 2y &#61; 3 <br/> <strong>Back-substitution</strong> : 1x &#43; 2&#40;2&#41; &#61; 3 given x &#61; -1.</p>
+<p>소거법은 세가지 연산을 통해 수행할 수 있으며,<br/> 아래의 세가지 연산을 elementary row operation이라고 한다.<br/></p>
+\[ Row-multiplying\ transformation,\ e(A)_{ij} = A_{ij},\ if i \neq r,\ e(A)_{rj} = cA_{rj}.\\
+	Row-switching\ transformation,\ e(A)_{ij},\ if i \neq r and s, e(A)_{rj} = A_{sj}, e(A)_{sj} = A_{rj}.\\
+	Row-addition\ transformation,\ e(A)_{ij} = A_{ij} + c \cdot A_{sj}.\]
+<div class="page-foot">
+  <div class="copyright">
+    &copy; sentiomnen. built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>, <a href="https://vercel.com">Vercel</a>.
+  </div>
+</div>
+</div><!-- CONTENT ENDS HERE -->
+      </article>
+    </div>
+
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+  </body>
+</html>

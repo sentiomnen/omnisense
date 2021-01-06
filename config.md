@@ -26,3 +26,9 @@ For instance:
 -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
+\newcommand{\definition}[3]{
+   @@definition
+   **definition !#1.** $!#2$\\
+   !#3
+   @@
+}

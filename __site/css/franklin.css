@@ -15,20 +15,63 @@
 ================================================================== */
 
 :root {
-  --block-background: #333333;
   --small: 14px;
   --normal: 19px;
   --text-color: #f0f0f0;
+  --sans: 'IBM Plex Sans KR';
+  --serif: 'Jeju';
 }
 
 /* ==================================================================
     DEFAULT FONT AND LAYOUT
 ================================================================== */
 
-html {
-  font-family: 'IBM Plex Sans KR';
-  font-size: var(--normal);
-  color: var(--text-color);
+article {
+  background-color: #202020;
+  color: #f0f0f0;
+  border-radius: 0px 0px 8px 8px;
+
+  padding: 2rem 5rem;
+  margin-bottom: 1rem;
+
+  font-family: var(--sans);
+  font-size: 19px;
+  text-align: left;
+  font-size: medium;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.border { border-radius: 8px 8px; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #333333;
+  height: 2.25rem;
+}
+nav li {
+  display: inline-block;
+  width: fit-content;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  font-family: var(--sans);
+  font-size: medium;
+  font-style: normal;
+  font-weight: normal;
+}
+nav li > a {
+  color: #deb564;
+  text-decoration: none;
+}
+nav li > a:hover {
+  color: #E2921C;
+  text-decoration: none;
 }
 
 /* ==================================================================
@@ -61,6 +104,29 @@ html {
 }
 
 /* ==================================================================
+    PARAGRAPH
+================================================================== */
+
+.franklin-content {
+  position: relative;
+  line-height: 1.35em;
+}
+
+.important {
+  color: #DEB564;
+}
+
+.definition {
+  background-color: #333333;
+  border-left: 2px solid #DEB564;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px 15px;
+  margin-bottom: 1em;
+}
+
+
+
+/* ==================================================================
     FOOT / COPYRIGHT
 ================================================================== */
 
@@ -91,11 +157,6 @@ html {
   color: #deb564
 }
 
-.franklin-content {
-  position: relative;
-  line-height: 1.35em;
-}
-
 /* On wide screens, fix content width to a max value. */
 @media (min-width: 940px) {
   .franklin-content {
@@ -116,14 +177,6 @@ article p > a {
   color: #deb564;
 }
 
-.franklin-content li {
-  list-style-type: circle;
-  list-style-position: outside;
-}
-.franklin-content ol li {
-  list-style-type: lower-alpha;
-  list-style-position: outside;
-}
 
 /* ==================================================================
     TITLES
@@ -143,14 +196,14 @@ article p > a {
   font-size: 1.2rem;
   padding-bottom: 0.1em;
   text-align: left;
-  color: #deb564ee;
+  color: #DEB564;
 }
 .franklin-content h3 {
   font-size: 0.9rem;
   margin-top: 1.5rem;
   padding: 0%;
   text-align: left;
-  color: #e2931ca8;
+  color: #F5A17F;
 }
 .franklin-content h4 {
   font-size: 0.8rem;

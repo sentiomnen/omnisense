@@ -8,6 +8,8 @@ The website_* must be defined for the RSS to work
 @def website_url   = "https://omnisense.vercel.app/"
 
 @def author = "sentiomnen"
+@def title =  "omnisense"
+@def index = false
 
 @def mintoclevel = 2
 

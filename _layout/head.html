@@ -6,7 +6,8 @@
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
   {{if hasmath}} {{insert head_katex.html }}     {{end}}
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
-  <link rel="stylesheet" href="/css/franklin.css">
+  {{if index}}<link rel="stylesheet" href="/css/for_index.css">
+  {{else}}<link rel="stylesheet" href="/css/franklin.css">{{end}}
   <link rel="stylesheet" href="/css/basic.css">
   <link rel="icon" href="/assets/favicon.png">
 </head>

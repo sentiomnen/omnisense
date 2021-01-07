@@ -26,22 +26,15 @@ For instance:
 -->
 \newcommand{\R}{\mathbb R}
 \newcommand{\scal}[1]{\langle #1 \rangle}
-\newcommand{\definition}[3]{
-   @@definition
-   **definition !#1.** $!#2$\\
-   !#3
-   @@
-}
 
-<!--------------------Text--------------------->
-\newcommand{\middle}[1]{@@middle !#1 @@}
+<!--Text elements-->
+\newcommand{\center}[1]{@@center !#1 @@}
 \newcommand{\right}[1]{ @@right !#1 @@ }
-
 \newcommand{\serif}[1]{ @@serif !#1 @@ }
-
-<!--------------------Layout--------------------->
-\newcommand{\button}[2]{
-   ~~~<div class="button"><a href="!#1">~~~
+<!--Special paragraphs-->
+\newcommand{\proof}[2]{
+   @@proof
+   **Proof.** $!#1$\\
    !#2
-   ~~~</div></a>~~~
+   @@
 }

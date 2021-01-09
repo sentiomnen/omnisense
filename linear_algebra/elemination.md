@@ -114,4 +114,20 @@ Elemination needs linearity.
 -->
 
 \\
-[^1]: 추가 예정
+[^1]: 추가 예정***END OF FILE***theorem 6. if A is an m x n matrix and m < a, then the homogenuous system AX = 0 has a non-trivial solution.
+theorem 7. if A is an n x n matrix, then A is row-equivalent to the n x n indentity matrix if and only if the system AX = 0 has only the trivial solution.
+
+homogenuous system always have trivial solution x_1 = \cdots = x_n = 0.
+
+We form the Argumented matrix A' of the system AX = Y.
+this is the m x (n+1) matrix whose first n column are the columns of A and whose last column is Y.
+$$ A'_{ij}= A_{ij},\quad if\ j \le n\\ A'_{i(n+1)} = y_i. $$
+
+Suppose we perform a sequence of elementary row operations on A, arriving at a row-reduced echelon matri R.
+If we perfom this same equence of row opations on A',\\
+we will arrive at a matrix R' whose first n column are the columns of R and whose last column contains certain scalars $z_1,\ \cdots,\ z_m$.
+The scalar $z_i$ are the entries of the m x 1 matrix which result from applying the sequence of row operations to the matrix Y.
+
+Gauss Elemination = Row reduction.
+It is an algorithm solving a system of linear equations.
+This method can also be used to find the rank of matrix, to calculate the determinant of a matrix, and to calculate the inverse of an invertible square matrix.

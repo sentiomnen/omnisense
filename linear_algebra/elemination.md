@@ -117,7 +117,7 @@ Elemination needs linearity.
 [^1]: 추가 예정***END OF FILE***theorem 6. if A is an m x n matrix and m < a, then the homogenuous system AX = 0 has a non-trivial solution.
 theorem 7. if A is an n x n matrix, then A is row-equivalent to the n x n indentity matrix if and only if the system AX = 0 has only the trivial solution.
 
-homogenuous system always have trivial solution x_1 = \cdots = x_n = 0.
+homogenuous system always have trivial solution $x_1 = \cdots = x_n = 0$.
 
 We form the Argumented matrix A' of the system AX = Y.
 this is the m x (n+1) matrix whose first n column are the columns of A and whose last column is Y.

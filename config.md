@@ -38,3 +38,13 @@ For instance:
    !#2
    @@
 }
+
+<!--Layout-->
+\newcommand{\link}[2]{
+   @@link
+   ~~~<a href="!#1">~~~
+   !#2
+
+   ~~~</a>~~~
+   @@
+}

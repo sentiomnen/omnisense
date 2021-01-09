@@ -1,7 +1,7 @@
 @def title = "Linear Algebra"
-
-# {{fill title}}
-Solving the system of linear equations ( Sets of linear equations ) is the central problem of Linear algebra.\\
+#{{fill title}}
+Linear algebra is the study of how solve the linear equations ( in other words, equations of the first degree ).\\
+Among other things, The system of linear equations are the central problem of Linear algebra.
 
 **In Field F, System of m linear equations in n unknowns are :**\\
 $x_i$ that $1 \le i \le n$ is unknowns and $ A_{ij},\ b_i$ that $\ 1 \le i \le m, 1 \le j \le n, i \vee j \in R$ is constant.

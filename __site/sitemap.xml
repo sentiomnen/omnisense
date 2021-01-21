@@ -2,44 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://omnisense.vercel.app/linear_algebra\linear\index.html</loc>
+    <loc>https://omnisense.vercel.app/programming\julia\index.html</loc>
+    <lastmod>2021-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/science\linear_algebra\matrix\index.html</loc>
     <lastmod>2021-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/science\logic\predicated\index.html</loc>
+    <lastmod>2021-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/linguistics\de\index.html</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/science\linear_algebra\elemination\index.html</loc>
+    <lastmod>2021-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://omnisense.vercel.app/science\index.html</loc>
-    <lastmod>2021-01-09</lastmod>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://omnisense.vercel.app/linear_algebra\matrix\index.html</loc>
-    <lastmod>2021-01-09</lastmod>
+    <loc>https://omnisense.vercel.app/science\logic\index.html</loc>
+    <lastmod>2021-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://omnisense.vercel.app/linear_algebra\elemination\index.html</loc>
-    <lastmod>2021-01-09</lastmod>
+    <loc>https://omnisense.vercel.app/linguistics\en\index.html</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/404\index.html</loc>
+    <lastmod>2021-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/linguistics\ko\index.html</loc>
+    <lastmod>2021-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/science\linear_algebra\linear\index.html</loc>
+    <lastmod>2021-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/science\logic\propositional\index.html</loc>
+    <lastmod>2021-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/index.html</loc>
+    <lastmod>2021-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/science\logic\tautology\index.html</loc>
+    <lastmod>2021-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://omnisense.vercel.app/node_modules\highlight.js\README\index.html</loc>
+    <lastmod>1985-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://omnisense.vercel.app/menu3\index.html</loc>
     <lastmod>2020-12-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://omnisense.vercel.app/index.html</loc>
-    <lastmod>2021-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://omnisense.vercel.app/404\index.html</loc>
-    <lastmod>2021-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>

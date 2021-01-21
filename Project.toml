@@ -1,3 +1,5 @@
 [deps]
+Cairo = "159f3aea-2a34-519c-b102-8c37f9878175"
+Fontconfig = "186bb1d3-e1f7-5a2c-a377-96d770f13627"
 Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
 NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"

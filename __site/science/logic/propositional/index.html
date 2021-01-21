@@ -1,0 +1,76 @@
+<!doctype html>
+<meta lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Propositional Logic</title>  
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+  
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/basic.css">
+  <link rel="icon" href="/assets/favicon.png">
+</head>
+<body>
+  <header>
+  <div><a href="/">omnisense</a></div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/science/">Science</a></li>
+    <li><a href="/menu3/">Programming</a></li>
+    <li><a href="/menu3/">Engineering</a></li>
+  </ul>
+</nav>
+
+  <article>
+<!-- Content appended here -->
+<div class="franklin-content"><h1 id="fill_title"><a href="#fill_title">Propositional Logic</a></h1>
+<p>The Concren of the propositional logic is showing validness of deductive arguments Arguments are the producing new knowledge from existing knowledges.</p>
+<p>the representations of knowledge without ambiguations are called <strong>Proposition</strong>.<br/> and the strings of symbols of propositional logic are called <strong>Propositional Formula</strong> &#40; formular in plural &#41;.</p>
+<div class="def"><h3 id="definition_1_the_propositional_formula"><a href="#definition_1_the_propositional_formula">Definition  1. The Propositional Formula.</a></h3>
+<p>The propositional formula is defined with followings recursively.<br/></p>
+<ul>
+<li><p><strong>Atomic formula</strong>, that denotions of knowledges.</p>
+</li>
+<li><p><strong>Compound formula</strong>, that connected with connectives and parenthesis.</p>
+</li>
+</ul>
+<h4>Definition 1-1. Connectives.<br/></h4>
+<p>Connectives are only to in simply system &#40; this called functional complete set &#41;. and this system can be various.<br/> I use the system with negation and implication :<br/></p>
+<ul>
+<li><p>Negation represented in \(\neg P\) or \(\sim P\), and read as &quot;not&quot;.<br/></p>
+</li>
+<li><p>Implication, Necessatily represented in \(P \implies Q\), and read as &quot;implies&quot; or &quot;if P, then Q&quot;.</p>
+</li>
+</ul></div>
+<p>The formulae interpereted as truth value that is always true or false.<br/> Atomic formulae interpreted in true or false, what value assigned is due to mathematician.<br/> Connectives determine value of compund formulae by following subformulae.<br/></p>
+<table><tr><th align="right">\(P\)</th><th align="right">\(Q\)</th><th align="right">\(\neg P\)</th><th align="right">\(P \implies Q\)</th></tr><tr><td align="right">\(F\)</td><td align="right">\(F\)</td><td align="right">\(T\)</td><td align="right">\(T\)</td></tr><tr><td align="right">\(F\)</td><td align="right">\(T\)</td><td align="right">\(T\)</td><td align="right">\(T\)</td></tr><tr><td align="right">\(T\)</td><td align="right">\(F\)</td><td align="right">\(F\)</td><td align="right">\(F\)</td></tr><tr><td align="right">\(T\)</td><td align="right">\(T\)</td><td align="right">\(F\)</td><td align="right">\(T\)</td></tr></table>
+<h4 id="definition_2_if_the_formula_a_is_true_in_the_truth-assignment_barx_called_a_satisfied_in_barx"><a href="#definition_2_if_the_formula_a_is_true_in_the_truth-assignment_barx_called_a_satisfied_in_barx">Definition 2. If the formula \(A\) is true in the truth-assignment \(\bar{x}\), Called \(A\ satisfied\ in\ \bar{x}\).</a></h4>
+<h4 id="definition_if_the_barx_stisfy_the_aw_call_barx_models_a_and_denoted_as_barx_models_a"><a href="#definition_if_the_barx_stisfy_the_aw_call_barx_models_a_and_denoted_as_barx_models_a">Definition. if the \(\bar{x}\) stisfy the \(A\)w, call \(\bar{x}\) models \(A\), and denoted as \(\bar{x} \models A\).</a></h4>
+<p>the sign \(\models\) represent the satisfaction relation.<br/> If exsists the satisfied truth-assignment of formula \(A\), called \(A\) is satisfiable. And if their doesn&#39;t exist, called \(A\) is unsatisfiable or Contradiction.<br/></p>
+<p><br/>conjunction read as and disjunction read as or biconditional read as iff or if and only if contradiction \(\bot\) read as bottom.</p>
+<p>&#61; is used for equivalence, comparative this two formula has same inperetation, use \(\equiv\) and called <strong>semantic equality</strong>. <br/></p>
+<h3 id="definition_2_equivalent"><a href="#definition_2_equivalent">Definition 2. Equivalent.</a></h3>
+<p>Equivalent represents that the truth set is same in every truth-value assignment and it denoted with equality &quot;\(=\)&quot;.</p>
+<h3 id="definition_2-1_logicall_valid_formula_topology"><a href="#definition_2-1_logicall_valid_formula_topology">Definition 2-1.  logicall valid formula, topology</a></h3>
+<p>명제논리는 결정가능&#40;decidable&#41;하다. 즉 임의의 명제 논리식이 타당한지 &#40;혹은 두 명제 논리식 간에 논리적 도출 관계가 성립하는지&#41; 여부는 기계적으로 판단할 수 있다. We shall also look at the truth or falsity of the statements and the validity of arguments built up from them.     문장 ϕ가 모든 해석 하에서 참일 경우 문장 ϕ는 타당하다.     문장 ϕ와 문장집합 Γ에 대해, Γ의 모든 문장들을 참이게 하면서 ϕ를 거짓이게 하는 해석이 존재하지 않을 경우 ϕ는 Γ의 귀결이다.     문장집합 Γ에 대해, Γ의 모든 문장들을 참이게 하는 해석이 하나라도 존재할 경우 Γ는 일관적이다.</p>
+
+</div><!-- CONTENT ENDS HERE -->
+    </article>
+
+    <footer>
+      <p>Sentiomnen, loha_dan@protonmail.ch</p>
+
+      
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+      
+      
+    </footer>
+  </body>
+</html>

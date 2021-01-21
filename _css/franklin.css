@@ -45,6 +45,8 @@ article {
   font-style: normal;
   font-weight: normal;
 }
+::selection { color: inherit; background-color: inherit; }
+.franklin-content p::selection { color: #DEB564; background-color: inherit; }
 
 nav {
   display: flex;
@@ -90,6 +92,7 @@ nav li > a:hover {
 .link {
   display: block;
   background-color: #333333;
+  margin: 1rem 0rem;
   padding: 0rem;
 }
 .link a {
@@ -145,12 +148,10 @@ nav li > a:hover {
   color: #DEB564;
 }
 
-.definition {
-  background-color: #333333;
+.def {
   border-left: 2px solid #DEB564;
-  border-radius: 0px 10px 10px 0px;
-  padding: 10px 15px;
-  margin-bottom: 1em;
+  padding: 0 15px;
+  padding-bottom: 1px;
 }
 
 /* ==================================================================
@@ -188,7 +189,7 @@ nav li > a:hover {
 @media (min-width: 940px) {
   .franklin-content {
     width: auto;
-    margin: 0px 100px;
+    margin: 0px 160px;
   }
 }
 
@@ -207,13 +208,15 @@ nav li > a:hover {
 
 .franklin-content h1, h2, h3, h4, h5, h6 {
   font-family: 'Jeju';
+  margin:  0;
+  padding: 0;
 }
 
 .franklin-content h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   color: #deb564;
-  padding-bottom: 0.5rem;
+  padding-bottom: 4rem;
 }
 .franklin-content h2 {
   font-size: 1.2rem;
@@ -222,16 +225,18 @@ nav li > a:hover {
   color: #DEB564;
 }
 .franklin-content h3 {
-  font-size: 0.9rem;
-  margin-top: 1.5rem;
-  padding: 0%;
-  text-align: left;
+  margin-top: 1.3rem;
+  margin-bottom: -.75rem;
+
+  font-size: 1.1rem;
   color: #F5A17F;
+  text-align: left;
+  line-height: normal;
 }
 .franklin-content h4 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 1.5rem;
-  padding: 0%;
+  margin-bottom: -.75rem;
   text-align: left;
 }
 
@@ -261,14 +266,22 @@ nav li > a:hover {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
-  text-align: center;
 }
 
-.franklin-content th,
-td {
+.franklin-content table:not(.fndef) th, .franklin-content table:not(.fndef) td, .franklin-content table:not(.fndef) tr {
   font-size: var(--small);
+  text-align: center;
+  border: 1px solid darkgrey;
+  min-width: 2rem;
+}
+.franklin-content table:not(.fndef) th { background-color: #333333; }
+
+
+.franklin-content th, td, tr {
   padding: 10px;
-  border: 1px solid black;
+  font-size: 1rem;
+  text-align: center;
+  min-width: 2rem;
 }
 
 .franklin-content blockquote {
@@ -288,9 +301,10 @@ td {
 ================================================================== */
 
 /* Spacing between bullet points. */
+.franklin-content li { margin: -0.75rem 0; padding: 0%; }
 .franklin-content li p {
   padding: 0%;
-  margin: 0%;
+  margin:  1rem;
 }
 
 .franklin-content a {
@@ -321,15 +335,9 @@ td {
   margin-bottom: 10px;
 }
 
-.franklin-content .fndef tr,
-td {
-  padding: 0;
-  border: 0;
+.franklin-content .fndef tr, td {
+  padding: 5px 0;
   text-align: left;
-}
-
-.franklin-content .fndef tr {
-  border-left: 2px solid lightgray;
 }
 
 .franklin-content .fndef td.fndef-backref {

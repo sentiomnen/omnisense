@@ -34,6 +34,12 @@ For instance:
 \newcommand{\right}[1]{ @@right !#1 @@ }
 \newcommand{\serif}[1]{ @@serif !#1 @@ }
 <!--Special paragraphs-->
+\newcommand{\def}[2]{
+   @@def
+   ### Definition #1
+   !#2
+   @@
+}
 \newcommand{\proof}[2]{
    @@proof
    **Proof.** $!#1$\\

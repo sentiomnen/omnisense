@@ -10,58 +10,90 @@
  font-family: 'Jeju', serif;
 }
 
-body {
-  background-color: #0f0f0f;
-  width: 1440px;
-  margin: auto;
+
+
+body { background-color: #0f0f0f; margin: auto; }
+@media (min-width: 1440px) { body { width: 1440px; } }
+@media (max-width: 960px)  { body { width:  480px; } }
+@media (min-width: 960px) and (max-width: 1440px) { body { width:  960px; } }
+
+
+/*===========================================*/
+/*===================HEADER==================*/
+/*===========================================*/
+header { background-color: #0f0f0f; text-align: center; }
+header a {
+	line-height: 17rem;
+	text-align: center;
+
+	color: #f0f0f0;
+	text-decoration: none;
+   font-size: 3.25rem;
+   font-weight: bold;
 }
 
-.banner {
-  float: right;
 
-  width: auto;
-  height: auto;
-  max-width: auto;
-  max-height: 15em;
-}
-
-
-/*===HEADER===*/
-header {
-  display: flex;
-  background-color: #0f0f0f;
-  height: 17rem;
-
-  font-style: normal;
-
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-header div {
-  font-size: 3.25rem;
-  font-weight: bold;
-}
-header div > a {
-  color: #f0f0f0;
-  text-decoration: none;
-}
-
-/*===FOOTER===*/
+/*===========================================*/
+/*===================FOOTER==================*/
+/*===========================================*/
 footer {
-  background-color: #0f0f0f;
-  justify-content: center;
   text-align: center;
-
   padding: 1rem 0rem;
 
   font-size: 0.9rem;
   color: #f0f0f0;
-  text-decoration: none;
 }
 
 footer a:hover {
   color: #E2921C;
   text-decoration: none;
 }
+
+
+
+/*===========================================*/
+/*====================nav====================*/
+/*===========================================*/
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #333333;
+	height: 2.25rem;
+}
+nav li {
+	display: inline-block;
+	width: fit-content;
+	padding: 0 0.5rem;
+
+	font-family: 'IBM Plex Sans KR';
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+}
+nav a { color: #deb564; text-decoration: none; }
+nav a:hover { color: #E2921C; text-decoration: none; }
+
+
+
+/*===========================================*/
+/*==================Article==================*/
+/*===========================================*/
+article {
+	background-color: #202020;
+	color #f0f0f0;
+
+	padding: 2rem 5rem;
+	margin-bottom: 1rem;
+	text-align: left;
+	line-height: 1.35rem;
+
+	font-family: 'IBM Plex Sans KR';
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+}
+

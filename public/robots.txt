@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://paradecessum.vercel.app/sitemap.xml

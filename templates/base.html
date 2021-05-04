@@ -3,17 +3,33 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Para Decessum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paradecessum</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="icon"       href="../themes/favicon.png">
   </head>
 
   <body>
+    <header>
+      <div><a href="/">Paradecessum</a></div>
+    </header>
 
-    <section class="section">
-      <div class="container">
-        {% block content %} {% endblock %}
-      </div>
-    </section>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/mathematics/">Mathematics</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      {% block content %} {% endblock %}
+    </article>
+
+    <footer>
+      <p>Sentiomnen, loha_dan@protonmail.ch</p>
+    </footer>
   </body>
 
 </html>
